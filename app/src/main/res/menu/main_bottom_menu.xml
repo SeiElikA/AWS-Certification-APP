@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/btnExam"
+        android:title="測驗"
+        android:icon="@drawable/ic_baseline_edit_24"/>
+
+    <item android:id="@+id/btnAllQuestion"
+        android:title="全部題目"
+        android:icon="@drawable/ic_baseline_list_alt_24"/>
+</menu>

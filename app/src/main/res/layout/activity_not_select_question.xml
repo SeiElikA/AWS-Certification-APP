@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".View.Exam.NotSelectQuestionActivity">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:textSize="20sp"
+        android:text="未作答題目"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        tools:listitem="@layout/adapter_not_select_question"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/listView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="12dp"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        android:text="Close"/>
+</LinearLayout>

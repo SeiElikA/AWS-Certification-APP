@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.card.MaterialCardView
+        app:strokeWidth="1dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="9dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Question title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitle"/>
+
+            <TextView
+                android:text="(多選題)"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMode"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbA"
+                    android:tag="A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select A"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbB"
+                    android:layout_width="match_parent"
+                    android:tag="B"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Select B"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="C"
+                    android:layout_marginTop="8dp"
+                    android:text="Select C"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbD"
+                    android:layout_width="match_parent"
+                    android:tag="D"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Select D"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtAnsDes"
+                android:autoLink="web"
+                android:text="題目解析:\nDynamoDB支持就地原子更新.参考:http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.AtomicCounters"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

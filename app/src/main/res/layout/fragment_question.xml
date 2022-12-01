@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.QuestionFragment">
+    <ScrollView
+        android:scrollbars="none"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="Question title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitle"/>
+
+            <TextView
+                android:text="(多選題)"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMode"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbA"
+                    android:tag="A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select A"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbB"
+                    android:layout_width="match_parent"
+                    android:tag="B"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Select B"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="C"
+                    android:layout_marginTop="12dp"
+                    android:text="Select C"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbD"
+                    android:layout_width="match_parent"
+                    android:tag="D"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Select D"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
