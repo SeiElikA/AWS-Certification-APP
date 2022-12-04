@@ -14,7 +14,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.SeiElikA.awscertification.Data.Question
 import com.SeiElikA.awscertification.Data.SelectAns
-import com.SeiElikA.awscertification.Fragment.QuestionFragment
+import com.SeiElikA.awscertification.View.Fragment.QuestionFragment
 import com.SeiElikA.awscertification.R
 import com.SeiElikA.awscertification.databinding.ActivityQuestionBinding
 import com.SeiElikA.awscertification.formatZero

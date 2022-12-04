@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.QuestionFragment">
+    tools:context=".View.Fragment.QuestionFragment">
     <ScrollView
         android:scrollbars="none"
         android:padding="12dp"
@@ -69,6 +69,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:text="Select D"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/rbE"
+                    android:layout_width="match_parent"
+                    android:tag="E"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone"
+                    android:text="Select E"
                     android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>

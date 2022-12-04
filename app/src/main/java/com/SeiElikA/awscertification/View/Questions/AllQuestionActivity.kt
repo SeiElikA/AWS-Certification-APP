@@ -1,7 +1,5 @@
 package com.SeiElikA.awscertification.View.Questions
 
-import android.app.AlertDialog
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,19 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.SeiElikA.awscertification.Data.Question
-import com.SeiElikA.awscertification.Data.SelectAns
-import com.SeiElikA.awscertification.Fragment.AllQuestionFragment
-import com.SeiElikA.awscertification.Fragment.QuestionFragment
+import com.SeiElikA.awscertification.View.Fragment.AllQuestionFragment
 import com.SeiElikA.awscertification.Model.QuestionSaveModel
 import com.SeiElikA.awscertification.R
-import com.SeiElikA.awscertification.View.Exam.EndExamActivity
-import com.SeiElikA.awscertification.View.Exam.NotSelectQuestionActivity
-import com.SeiElikA.awscertification.View.Exam.QuestionActivity
 import com.SeiElikA.awscertification.databinding.ActivityAllQuestionBinding
-import com.SeiElikA.awscertification.databinding.ActivityQuestionBinding
-import com.SeiElikA.awscertification.formatZero
 import com.google.gson.Gson
-import kotlin.concurrent.thread
 
 class AllQuestionActivity : AppCompatActivity() {
     private lateinit var control: ActivityAllQuestionBinding

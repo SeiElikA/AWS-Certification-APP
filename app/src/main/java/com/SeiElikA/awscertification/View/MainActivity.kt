@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
-import com.SeiElikA.awscertification.Fragment.MainFragment
+import com.SeiElikA.awscertification.View.Fragment.MainFragment
 import com.SeiElikA.awscertification.R
 import com.SeiElikA.awscertification.databinding.ActivityMainBinding
 

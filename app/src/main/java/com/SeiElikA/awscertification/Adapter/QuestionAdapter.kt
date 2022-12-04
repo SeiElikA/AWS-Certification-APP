@@ -25,7 +25,7 @@ class QuestionAdapter(var context: Context, var type: Int): BaseAdapter() {
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
         val control = AdapterQuestionItemBinding.inflate(LayoutInflater.from(context), p2, false)
-        var questionList = listOf("1. Cloud Practitioner", "2. Solutions Architect Associate")
+        val questionList = listOf("1. Cloud Practitioner", "2. Solutions Architect Associate")
         control.txtTitle.text = questionList[p0]
 
         if(type == 0) {

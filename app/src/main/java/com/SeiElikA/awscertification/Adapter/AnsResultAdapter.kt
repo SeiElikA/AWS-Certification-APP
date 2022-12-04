@@ -37,7 +37,12 @@ class AnsResultAdapter(var context: Context, var list: List<SelectAns>): BaseAda
             control.rbC.text = it.choices?.C?.removeHtml()
             control.rbD.text = it.choices?.D?.removeHtml()
 
-            val questionList = listOf(control.rbA,control.rbB,control.rbC, control.rbD)
+            if(it.choices?.E != null) {
+                control.rbE.isGone = false
+                control.rbE.text = it.choices?.E?.removeHtml()
+            }
+
+            val questionList = listOf(control.rbA,control.rbB,control.rbC, control.rbD, control.rbE)
 
             control.txtMode.text = if(it.type == "1") "(單選題)" else "(多選題)"
             questionList.forEach { cb ->
