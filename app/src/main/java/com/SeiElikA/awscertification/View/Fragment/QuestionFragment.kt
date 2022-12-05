@@ -52,6 +52,11 @@ class QuestionFragment : Fragment() {
                 cb.setOnCheckedChangeListener { buttonView, isChecked ->
                     val select = buttonView.tag.toString()
                     if(isChecked) {
+                        // 設定單選
+                        if(it.type == "1") {
+                            questionList.filter {z -> z != cb}.forEach { x->x.isChecked = false }
+                        }
+
                         selectAns.add(select)
                     } else {
                         selectAns.remove(select)
@@ -60,6 +65,8 @@ class QuestionFragment : Fragment() {
                     selectAns.sort()
 
                     QuestionActivity.ansList.firstOrNull { x->x.question == it }?.selectAns = selectAns
+
+
                 }
             }
         }

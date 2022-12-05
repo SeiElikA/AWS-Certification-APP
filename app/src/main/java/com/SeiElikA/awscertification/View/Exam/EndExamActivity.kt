@@ -16,9 +16,9 @@ class EndExamActivity : AppCompatActivity() {
         setContentView(control.root)
 
         var ansList = (intent.getSerializableExtra("dataList") as Array<SelectAns>).toMutableList()
-        var count = ansList.count {x -> x.selectAns.joinToString(",") == x.question.correctAns}
-        control.txtCorrect.text = "答對題數： ${count}/${ansList.size}"
-        if(count < ansList.size / 2) {
+        val correctCount = ansList.count {x -> x.selectAns.joinToString(",") == x.question.correctAns}
+        control.txtCorrect.text = "答對題數： ${correctCount}/${ansList.size}"
+        if(correctCount < ansList.size / 2) {
             control.txtCorrect.setTextColor(Color.RED)
         }
         ansList = ansList.filter { x->x.selectAns.joinToString(",") != x.question.correctAns }.toMutableList()

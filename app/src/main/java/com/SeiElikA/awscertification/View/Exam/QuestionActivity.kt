@@ -37,6 +37,7 @@ class QuestionActivity : AppCompatActivity() {
             .setMessage("確認要離開考試嗎")
             .setNegativeButton("Cancel") {_,_ ->}
             .setPositiveButton("Confirm") { _, _ ->
+                ansList.clear()
                 super.onBackPressed()
             }
             .create()
